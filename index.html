@@ -5,7 +5,13 @@
   <title>Akshay Kubade - Java Backend Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com">
+       <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+  </script>
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased">
   <!-- Header -->
@@ -62,10 +68,15 @@
         </div>
       </div>
 
-      <!-- Right / Quick facts -->
-      <div class="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-6 shadow-sm">
-        <div class="text-xs text-gray-500 mb-3">Quick Facts</div>
-        <ul class="space-y-2 text-sm">
+            <!-- Right / Photo + Quick facts -->
+      <div class="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-6 shadow-sm flex flex-col items-center text-center md:text-left md:items-start">
+        <img
+          src="akshay.jpg"
+          alt="Akshay Kubade"
+          class="w-28 h-28 rounded-full object-cover border border-indigo-200 mb-4"
+        />
+        <div class="text-xs text-gray-500 mb-3 w-full">Quick Facts</div>
+        <ul class="space-y-2 text-sm w-full">
           <li><strong>Location:</strong> Pune, India</li>
           <li><strong>Experience:</strong> ~2.3 years (Java / Spring)</li>
           <li><strong>Preferred:</strong> Pune · Bengaluru · Hyderabad</li>
@@ -73,6 +84,7 @@
           <li><strong>Status:</strong> Immediate joiner</li>
         </ul>
       </div>
+
     </section>
 
     <!-- Tech Summary -->
@@ -260,3 +272,4 @@
   </script>
 </body>
 </html>
+
